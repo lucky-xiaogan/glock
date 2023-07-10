@@ -5,9 +5,9 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/go-redis/redis/v8"
 	"github.com/pyroscope-io/client/pyroscope"
-	"github.com/zqlpaopao/tool/glock/pkg"
+	"github.com/redis/go-redis/v9"
+	"github.com/zqlpaopao/glock/pkg"
 )
 
 /*
@@ -53,7 +53,9 @@ func main() {
 	}()
 
 	redis := redis.NewClient(&redis.Options{
-		Addr: "127.0.0.1:6379",
+		Addr:     "47.94.110.105:26379",
+		Password: "xBGvBZb3R7JmC5WsMPwi",
+		DB:       4,
 	})
 
 	var i int = 1

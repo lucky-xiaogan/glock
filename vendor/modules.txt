@@ -3,7 +3,6 @@ github.com/cespare/xxhash/v2
 # github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
 github.com/dgryski/go-rendezvous
 # github.com/go-redis/redis/v8 v8.11.4
-## explicit
 github.com/go-redis/redis/v8
 github.com/go-redis/redis/v8/internal
 github.com/go-redis/redis/v8/internal/hashtag
@@ -29,7 +28,6 @@ github.com/redis/go-redis/v9/internal/rand
 github.com/redis/go-redis/v9/internal/util
 # github.com/zqlpaopao/tool v0.0.0-20220322141423-7696d0ddd2ea
 ## explicit
-github.com/zqlpaopao/tool/glock/pkg
 github.com/zqlpaopao/tool/rand-string/pkg
 github.com/zqlpaopao/tool/redis/pkg
 github.com/zqlpaopao/tool/retry/pkg
