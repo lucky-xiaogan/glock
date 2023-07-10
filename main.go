@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"runtime/debug"
+	"time"
+
 	"github.com/go-redis/redis/v8"
 	"github.com/pyroscope-io/client/pyroscope"
 	"github.com/zqlpaopao/tool/glock/pkg"
-	"runtime/debug"
-	"time"
 )
 
 /*
@@ -25,10 +26,10 @@ func main() {
 		ApplicationName: "master.app",
 
 		// replace this with the address of pyroscope server
-		ServerAddress:   "http://127.0.0.1:4040",
+		ServerAddress: "http://127.0.0.1:4040",
 
 		// you can disable logging by setting this to nil
-		Logger:          pyroscope.StandardLogger,
+		Logger: pyroscope.StandardLogger,
 
 		// optionally, if authentication is enabled, specify the API key:
 		// AuthToken: os.Getenv("PYROSCOPE_AUTH_TOKEN"),
@@ -45,7 +46,7 @@ func main() {
 	})
 
 	defer func() {
-		if err := recover();nil != err{
+		if err := recover(); nil != err {
 			fmt.Println(err)
 			fmt.Println(string(debug.Stack()))
 		}
@@ -77,7 +78,6 @@ func main() {
 		}),
 	)
 
-
 	for {
 		gLock.Lock(i, i1)
 
@@ -89,6 +89,5 @@ func main() {
 
 		time.Sleep(5 * time.Second)
 	}
-
 
 }

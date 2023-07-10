@@ -1,4 +1,4 @@
-# github.com/cespare/xxhash/v2 v2.1.2
+# github.com/cespare/xxhash/v2 v2.2.0
 github.com/cespare/xxhash/v2
 # github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
 github.com/dgryski/go-rendezvous
@@ -17,6 +17,16 @@ github.com/go-redis/redis/v8/internal/util
 github.com/pyroscope-io/client/internal/flameql
 github.com/pyroscope-io/client/internal/sortedmap
 github.com/pyroscope-io/client/pyroscope
+# github.com/redis/go-redis/v9 v9.0.5
+## explicit
+github.com/redis/go-redis/v9
+github.com/redis/go-redis/v9/internal
+github.com/redis/go-redis/v9/internal/hashtag
+github.com/redis/go-redis/v9/internal/hscan
+github.com/redis/go-redis/v9/internal/pool
+github.com/redis/go-redis/v9/internal/proto
+github.com/redis/go-redis/v9/internal/rand
+github.com/redis/go-redis/v9/internal/util
 # github.com/zqlpaopao/tool v0.0.0-20220322141423-7696d0ddd2ea
 ## explicit
 github.com/zqlpaopao/tool/glock/pkg
