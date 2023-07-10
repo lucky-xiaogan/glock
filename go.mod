@@ -1,4 +1,4 @@
-module github.com/zqlpaopao/glock
+module github.com/lucky-xiaogan/glock
 
 go 1.16
 
